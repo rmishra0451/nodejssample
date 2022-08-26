@@ -12,7 +12,11 @@ permissions:
     group: ubuntu
 
 hooks:
-  
+  ApplicationStop:
+    - location: scripts/app_stop.sh
+      timeout: 300
+      runas: ubuntu
+
   InstallDependencies:
     - location: scripts/install_dependencies.sh
       timeout: 300
