@@ -1,4 +1,5 @@
 #!/bin/bash
 #Stopping existing node servers
 echo "Stopping any existing node servers"
-pm2 stop 0
+cd /home/ubuntu/express-app
+pkill node
