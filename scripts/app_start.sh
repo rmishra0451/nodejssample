@@ -3,4 +3,4 @@
 # Move to the directory
 cd /home/ubuntu/express-app
 
-pm2 reload 0
+sudo pm2 start app.js
