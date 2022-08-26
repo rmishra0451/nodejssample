@@ -1,13 +1,6 @@
 #!/bin/bash
 
-#give permission for everything in the express-app directory
-sudo chmod -R 777 /home/ubuntu/express-app
+# Move to the directory
+cd /home/ec2-user/<app-name>
 
-#navigate into our working directory where we have all our github files
-cd /home/ubuntu/express-app
-
-#install node modules 
-npm install
-
-#start our node app in the background
-node app.js > app.out.log 2> app.err.log < /dev/null &
+pm2 reload 0

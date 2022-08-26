@@ -1,17 +1,26 @@
+# Do not change this file. 
+# This is an AWS Code Deploy appspec.yml file
+
 version: 0.0
 os: linux
+
 files:
   - source: /
-    destination: /home/ubuntu/express-app
+    destination: /home/ubuntu/express-app/
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+    group: ubuntu
+
 hooks:
-  ApplicationStop:
-    - location: scripts/app_stop.sh
+  
+  InstallDependencies:
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: ubuntu
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
-      runas: ubuntu
+
   ApplicationStart:
     - location: scripts/app_start.sh
       timeout: 300
