@@ -6,7 +6,7 @@ sudo chmod -R 777 /home/ubuntu/express-app
 #navigate into our working directory where we have all our github files
 cd /home/ubuntu/express-app
 
-#install node modules
+#install node modules 
 npm install
 
 #start our node app in the background
