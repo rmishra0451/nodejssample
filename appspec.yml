@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu/express-app
 hooks:
   ApplicationStop:
-    - location: scripts/app_stop.sh
+    - location: scripts/application_stop.sh
       timeout: 300
       runas: ubuntu
   BeforeInstall:

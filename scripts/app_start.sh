@@ -10,4 +10,4 @@ cd /home/ubuntu/express-app
 npm install
 
 #start our node app in the background
-node app.js > app.out.log 2> app.err.log < /dev/null &
+node app.js > app.out.log 2> app.err.log < /dev/null & 
