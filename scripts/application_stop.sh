@@ -2,4 +2,4 @@
 
 #killing all existing node servers
 
-sudo pkill node
+# sudo pkill node
