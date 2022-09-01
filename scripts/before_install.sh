@@ -10,6 +10,14 @@ export NVM_DIR="$HOME/.nvm"
 
 nvm install 16.17.0
 
+DIR="/home/ubuntu/express-app"
+if [ -d "$DIR" ]; then
+  echo "${DIR} exists"
+else
+  echo "Creating ${DIR} directory"
+  mkdir ${DIR}
+fi
+
 cd /home/ubuntu/express-app/
 
 sudo chmod +x ./scripts
