@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #give permission for everything in the express-app directory
-sudo chmod -R 700 /home/ubuntu/express-app
+sudo chmod -R 070 /home/ubuntu/express-app
 
 #navigate into our working directory where we have all our github files
 cd /home/ubuntu/express-app
