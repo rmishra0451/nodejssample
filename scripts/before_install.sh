@@ -18,6 +18,3 @@ else
   mkdir ${DIR}
 fi
 
-cd /home/ubuntu/express-app/
-
-sudo chmod +x ./scripts
