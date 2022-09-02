@@ -10,5 +10,5 @@ cd /home/ubuntu/express-app
 npm install
 
 #start our node app in the background(to get this path enter 'which node' in the terminal)
-sudo /home/ubuntu/.nvm/versions/node/v16.17.0/bin/node app.js > app.out.log 2> app.err.log &
+/home/ubuntu/.nvm/versions/node/v16.17.0/bin/node app.js > app.out.log 2> app.err.log &
 
